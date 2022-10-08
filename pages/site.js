@@ -109,7 +109,7 @@ export default function Home() {
         <h1 className="text-5xl font-bold text-center o">
           Get yourself a site
         </h1>
-        <br/>
+        <br />
         <h1 className="text-3xl font-semibold text-center">
           <Typewriter
             onInit={function (typewriter) {
@@ -117,64 +117,104 @@ export default function Home() {
             }}
           />
         </h1>
-        <br/><br/>
+        <br />
+        <br />
         <div className="flex lg:space-y-0 space-y-2 lg:flex-row flex-col lg:space-x-2 lg:inherit absolute left-[50%] translate-x-[-50%]">
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
             <h1 className="o text-3xl font-bold">Free</h1>
-            <br/>
+            <br />
             <p className="lg:text-2xl text-lg text-gray-500">
               This is a free pack for small projects like a web app.
             </p>
-            <br/>
-            <hr/>
-            <br/><br/>
+            <br />
+            <hr />
+            <br />
+            <br />
             <h1 className="text-2xl o">What do I get for free?</h1>
-            <br/>
+            <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
               <li className="text-gray-500 font-bold text-lg">Responsive</li>
               <li className="text-gray-500 font-bold text-lg">One page</li>
-              <li className="text-gray-500 font-bold text-lg line-through">Temparory Hosting</li>
-              <li className="text-gray-500 font-bold text-lg line-through">Tailwind CSS</li>
-              <li className="text-gray-500 font-bold text-lg line-through">MPA (HTML, CSS, JS)</li>
-              <li className="text-gray-500 font-bold text-lg line-through">SPA (React, Next)</li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                Temparory Hosting
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                Tailwind CSS
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                MPA (HTML, CSS, JS)
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                SPA (React, Next)
+              </li>
             </ul>
           </div>
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-          <h1 className="o text-3xl font-bold">MPA</h1>
-            <br/>
+            <h1 className="o text-3xl font-bold">MPA</h1>
+            <br />
             <p className="lg:text-2xl text-lg text-gray-500">
               This is a $2 pack for medium sized projects. Example - Portfolio
             </p>
-            <br/>
-            <hr/>
-            <br/><br/>
+            <br />
+            <hr />
+            <br />
+            <br />
             <h1 className="text-2xl o">What do I get for $2?</h1>
-            <br/>
+            <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
               <li className="text-gray-500 font-bold text-lg">Responsive</li>
-              <li className="text-gray-500 font-bold text-lg">MPA | No. of pages `&gt;` `or` = 1 </li>
+              <li className="text-gray-500 font-bold text-lg">
+                MPA | No. of pages `&gt;` `or` = 1{" "}
+              </li>
               <li className="text-gray-500 font-bold text-lg">Tailwind CSS</li>
-              <li className="text-gray-500 font-bold text-lg">Temparory Hosting</li>
-              <li className="text-gray-500 font-bold text-lg line-through">One page</li>
-              <li className="text-gray-500 font-bold text-lg line-through">SPA (React, Next)</li>
+              <li className="text-gray-500 font-bold text-lg">
+                Temparory Hosting
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                One page
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                SPA (React, Next)
+              </li>
             </ul>
           </div>
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-            <h1 className="o text-3xl font-bold"></h1>
-            <br/>
-            <p className="lg:text-2xl text-lg text-gray-500 text-center"></p>
-            <br/>
-            <hr/>
-            <br/><br/>
-            
+            <h1 className="o text-3xl font-bold">MPA</h1>
+            <br />
+            <p className="lg:text-2xl text-lg text-gray-500">
+              This is a $2 pack for medium sized projects. Example - Portfolio
+            </p>
+            <br />
+            <hr />
+            <br />
+            <br />
+            <h1 className="text-2xl o">What do I get for $2?</h1>
+            <br />
+            <ul>
+              <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
+              <li className="text-gray-500 font-bold text-lg">Responsive</li>
+              <li className="text-gray-500 font-bold text-lg">Tailwind CSS</li>
+              <li className="text-gray-500 font-bold text-lg">
+                Temparory Hosting
+              </li>
+              <li className="text-gray-500 font-bold text-lg">
+                SPA (React, Next)
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                One page
+              </li>
+              <li className="text-gray-500 font-bold text-lg line-through">
+                MPA | No. of pages `&gt;` `or` = 1{" "}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <br/>
+      <br />
       <footer></footer>
-      <br/>
+      <br />
     </div>
   );
 }
