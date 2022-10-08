@@ -181,16 +181,16 @@ export default function Home() {
             </ul>
           </div>
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-            <h1 className="o text-3xl font-bold">MPA</h1>
+            <h1 className="o text-3xl font-bold">SPA</h1>
             <br />
             <p className="lg:text-2xl text-lg text-gray-500">
-              This is a $2 pack for medium sized projects. Example - Portfolio
+              This is a $5 pack for large scale projects. Example - Messanger app
             </p>
             <br />
             <hr />
             <br />
             <br />
-            <h1 className="text-2xl o">What do I get for $2?</h1>
+            <h1 className="text-2xl o">What do I get for $5?</h1>
             <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>

@@ -118,7 +118,7 @@ export default function Home() {
         <br />
         <div className="flex space-x-2">
           <span className="text-[16px] lg:text-2xl">P.S. The code of this site is on</span>
-          <a className="font-extrabold text-[16px] lg:text-2xl" href="" target="_blank">GitHub</a>
+          <a className="font-extrabold text-[16px] lg:text-2xl" href="https://github.com/agrimCodesLikeIdiot/portfolio" target="_blank">GitHub</a>
         </div>
       </div>
       <footer></footer>
