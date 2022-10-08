@@ -1,0 +1,23 @@
+body {
+  overflow-x: hidden;
+  color: black;
+  font-family: "Cantarell";
+}
+h1 {
+  font-family: "cursive";
+  background: -webkit-linear-gradient(45deg, #5f2c82, #49a09d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.l {
+  font-family: "Cantarell";
+  background: -webkit-linear-gradient(45deg, #5f2c82, #49a09d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.o {
+  font-family: "Calligraphy";
+  background: -webkit-linear-gradient(45deg, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
