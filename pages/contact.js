@@ -3,7 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   var $ = (e) => {
@@ -11,7 +12,7 @@ export default function Home() {
   };
 
   const [term, setterm] = useState(null);
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <div className={styles.container}>
@@ -43,30 +44,56 @@ export default function Home() {
             }}
             onKeyDown={function (e) {
               if (e.key === "Enter") {
-                if (term === "about" || term === "about me" || term === "about page") {
-                  router.push("/about")
-                } else if (term === "blogs" || term === "your blogs" || term === "blogs page" || term === "blog") {
-                  router.push("/blogs")
-                } else if (term === "get a site" || term === "build me a site" || term === "I want a site") {
-                  router.push("/site")
+                if (
+                  term === "about" ||
+                  term === "about me" ||
+                  term === "about page"
+                ) {
+                  router.push("/about");
+                } else if (
+                  term === "blogs" ||
+                  term === "your blogs" ||
+                  term === "blogs page" ||
+                  term === "blog"
+                ) {
+                  router.push("/blogs");
+                } else if (
+                  term === "get a site" ||
+                  term === "build me a site" ||
+                  term === "I want a site"
+                ) {
+                  router.push("/site");
                 } else if (term === "contact" || term === "contact page") {
-                  router.push("/contact")
+                  router.push("/contact");
                 } else {
-                  router.push("/")
+                  router.push("/");
                 }
               }
             }}
           />
           <button
             onClick={function () {
-              if (term === "about" || term === "about me" || term === "about page") {
-                router.push("/about")
-              } else if (term === "blogs" || term === "your blogs" || term === "blogs page" || term === "blog") {
-                router.push("/blogs")
-              } else if (term === "get a site" || term === "build me a site" || term === "I want a site") {
-                router.push("/site")
+              if (
+                term === "about" ||
+                term === "about me" ||
+                term === "about page"
+              ) {
+                router.push("/about");
+              } else if (
+                term === "blogs" ||
+                term === "your blogs" ||
+                term === "blogs page" ||
+                term === "blog"
+              ) {
+                router.push("/blogs");
+              } else if (
+                term === "get a site" ||
+                term === "build me a site" ||
+                term === "I want a site"
+              ) {
+                router.push("/site");
               } else if (term === "contact" || term === "contact page") {
-                router.push("/contact")
+                router.push("/contact");
               }
             }}
             className="absolute right-0 top-0 lg:hidden flex w-[40px] h-[30px] bg-green-300 text-white font-bold rounded-full justify-center items-center"
@@ -75,7 +102,37 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <div id="main-content"></div>
+      <div
+        id="main-content"
+        className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
+      >
+        <div className="flex flex-col space-y-2">
+          <h1 className="text-5xl font-bold o">Contact</h1>
+          <h1 className="pl-[160px] text-3xl">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("Me...").start();
+              }}
+            />
+          </h1>
+        </div>
+        <br />
+        <div className="flex flex-col space-y-3">
+          <div className="flex space-x-2">
+            <img src="https://img.icons8.com/ios-filled/50/000000/apple-mail.png" />
+            <span className="text-gray-500 font-semibold flex items-center">
+              frontendagrim@gmail.com
+            </span>
+          </div>
+          <div className="flex space-x-2">
+            <img src="https://img.icons8.com/ios-glyphs/50/000000/discord-logo.png" />
+            <span className="text-gray-500 font-semibold flex items-center">
+              derp108_🍁#2654
+            </span>
+          </div>
+        </div>
+      </div>
+
       <footer></footer>
     </div>
   );

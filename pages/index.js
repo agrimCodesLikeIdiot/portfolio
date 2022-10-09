@@ -113,15 +113,38 @@ export default function Home() {
           I am a frontend developer who works with technologies like <br />
           Tailwindcss, React and Next. As and web developer, my goal is to make{" "}
           <br />
-          the internet a better place for people. <br />
+          the internet a better place for people. You can get a site for
+          yourself at /site <br /> Tip: `search get a site` on the search bar.
         </p>
         <br />
         <div className="flex space-x-2">
-          <span className="text-[16px] lg:text-2xl">P.S. The code of this site is on</span>
-          <a className="font-extrabold text-[16px] lg:text-2xl" href="https://github.com/agrimCodesLikeIdiot/portfolio" target="_blank">GitHub</a>
+          <span className="text-[16px] lg:text-2xl">
+            P.S. The code of this site is on
+          </span>
+          <a
+            className="font-extrabold text-[16px] lg:text-2xl"
+            href="https://github.com/agrimCodesLikeIdiot/portfolio"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </div>
       </div>
-      <footer></footer>
+      <footer className="lg:block hidden fixed bottom-0 right-0">
+        <div className="mt-[30px] flex-col space-y-2 text-center">
+          <h1 className="tracking-widest font-bold">WE BUILD YOUR SITES ON</h1>
+          <div className="flex space-x-2 justify-center">
+            <img src="https://img.icons8.com/office/50/000000/react.png" />
+            <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
+            <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+            <img src="https://img.icons8.com/color/50/000000/css3.png" />
+            <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
+            <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
+            <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
+            <img src="https://img.icons8.com/color/50/000000/python.png" />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

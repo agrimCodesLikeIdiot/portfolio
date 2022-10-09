@@ -107,7 +107,7 @@ export default function Home() {
       >
         <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] bg-slate-100">
           <div className="mr-0 ml-auto w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
-            <img src="https://img.icons8.com/ios-glyphs/36/000000/react.png" />
+            <img src="https://img.icons8.com/color/36/000000/nextjs.png" />
           </div>
           <h1 className="text-lg font-bold text-gray-500 font-sans">
             Oct 8, 2022

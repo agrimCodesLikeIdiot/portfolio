@@ -166,7 +166,7 @@ export default function Home() {
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
               <li className="text-gray-500 font-bold text-lg">Responsive</li>
               <li className="text-gray-500 font-bold text-lg">
-                MPA | No. of pages `&gt;` `or` = 1{" "}
+                MPA | No. of pages `&gt; 1` or `= 1 `
               </li>
               <li className="text-gray-500 font-bold text-lg">Tailwind CSS</li>
               <li className="text-gray-500 font-bold text-lg">
@@ -184,7 +184,8 @@ export default function Home() {
             <h1 className="o text-3xl font-bold">SPA</h1>
             <br />
             <p className="lg:text-2xl text-lg text-gray-500">
-              This is a $5 pack for large scale projects. Example - Messanger app
+              This is a $5 pack for large scale projects. Example - Messanger
+              app
             </p>
             <br />
             <hr />
@@ -206,7 +207,7 @@ export default function Home() {
                 One page
               </li>
               <li className="text-gray-500 font-bold text-lg line-through">
-                MPA | No. of pages `&gt;` `or` = 1{" "}
+                MPA (HTML, CSS, JS)
               </li>
             </ul>
           </div>
