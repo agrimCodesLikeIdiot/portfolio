@@ -105,20 +105,18 @@ export default function Home() {
         id="main-content"
         className="lg:pt-[15%] pt-[100px] lg:pl-0 pl-[10px] fixed lg:left-[50%] lg:translate-x-[-50%]"
       >
-        <h1 className="lg:text-7xl font-extrabold text-5xl select-none l">
-          Hi, I am Agrim
+        <h1 className="lg:text-6xl font-extrabold text-5xl select-none o text-center">
+          Don't touch, It works!
         </h1>
         <br />
-        <p className="text-[14px] lg:text-lg font-semibold text-gray-500">
-          I am a frontend developer who works with technologies like <br />
-          Tailwindcss, React and Next. As and web developer, my goal is to make{" "}
+        <p className="text-[14px] lg:text-lg font-semibold text-gray-500 text-center">
+          Hi, I am Agrim, a frontend developer and also the developer and owner{" "}
           <br />
-          the internet a better place for people. You can get a site for
-          yourself at /site <br /> Tip: `search get a site` on the search bar.
+          of this website. Welcome to my portfolio.
         </p>
         <br />
-        <div className="flex space-x-2">
-          <span className="text-[16px] lg:text-2xl">
+        <div className="flex space-x-2 text-center justify-center">
+          <span className="text-[16px] lg:text-2xl text-center">
             P.S. The code of this site is on
           </span>
           <a
@@ -129,20 +127,24 @@ export default function Home() {
             GitHub
           </a>
         </div>
+        <div className="flex justify-center mt-2.5">
+          <Link href="/about">
+            <button className="w-[140px] h-[40px] rounded-t-lg bg-blue-500 text-white text-3xl font-bold rounded-r-lg">
+              About
+            </button>
+          </Link>
+        </div>
       </div>
-      <footer className="lg:block hidden fixed bottom-0 right-0">
-        <div className="mt-[30px] flex-col space-y-2 text-center">
-          <h1 className="tracking-widest font-bold">WE BUILD YOUR SITES ON</h1>
-          <div className="flex space-x-2 justify-center">
-            <img src="https://img.icons8.com/office/50/000000/react.png" />
-            <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
-            <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
-            <img src="https://img.icons8.com/color/50/000000/css3.png" />
-            <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
-            <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
-            <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
-            <img src="https://img.icons8.com/color/50/000000/python.png" />
-          </div>
+      <footer className="lg:block hidden fixed top-[50%] translate-y-[-50%] ml-[10px] left-0">
+        <div className="flex flex-col space-y-2 justify-center">
+          <img src="https://img.icons8.com/office/50/000000/react.png" />
+          <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
+          <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+          <img src="https://img.icons8.com/color/50/000000/css3.png" />
+          <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
+          <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
+          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
+          <img src="https://img.icons8.com/color/50/000000/python.png" />
         </div>
       </footer>
     </div>
