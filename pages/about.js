@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
-import m from "../public/m.jpg"
+import m from "../public/m.jpg";
 
 export default function Home() {
   var $ = (e) => {
@@ -138,11 +138,23 @@ export default function Home() {
                 the web better. I can also build a site for you :)
               </p>
             </div>
-            <img  className="w-[500px] h-[400px] lg:block hidden rounded-lg" src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+            <img className="w-[500px] h-[400px] lg:block hidden rounded-lg" src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
           </div>
         </div>
       </div>
-      <footer></footer>
+      <footer className="lg:block hidden fixed top-[50%] translate-y-[-50%] mr-[10px] right-0">
+        <div className="flex flex-col space-y-2 justify-center">
+          <img src="https://img.icons8.com/office/50/000000/react.png" />
+          <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
+          <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+          <img src="https://img.icons8.com/color/50/000000/css3.png" />
+          <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
+          <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
+          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
+          <img src="https://img.icons8.com/color/50/000000/python.png" />
+          <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/50/000000/external-apps-technology-prettycons-lineal-color-prettycons.png" />
+        </div>
+      </footer>
     </div>
   );
 }

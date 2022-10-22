@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   var $ = (e) => {
@@ -103,50 +104,48 @@ export default function Home() {
       </nav>
       <div
         id="main-content"
-        className="lg:pt-[15%] pt-[100px] lg:pl-0 pl-[10px] fixed lg:left-[50%] lg:translate-x-[-50%]"
+        className="flex space-x-5 lg:pt-[15%] pt-[100px] lg:pl-0 pl-[10px] fixed lg:left-[35%] lg:translate-x-[-35%]"
       >
-        <h1 className="lg:text-6xl font-extrabold text-5xl select-none o text-center">
-          Don't touch, It works!
-        </h1>
-        <br />
-        <p className="text-[14px] lg:text-lg font-semibold text-gray-500 text-center">
-          Hi, I am Agrim, a frontend developer and also the developer and owner{" "}
+        <img src="https://i.pinimg.com/564x/ef/45/38/ef45387351176cfb696d4aa990fad126.jpg" className="lg:flex hidden w-[300px] h-[340px] rounded-lg object-cover" />
+        <div>
+          <h1 className="lg:text-6xl font-extrabold text-5xl select-none o lg:text-left text-center">
+
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Developing...")
+                  .start();
+              }}
+            />
+          </h1>
           <br />
-          of this website. Welcome to my portfolio.
-        </p>
-        <br />
-        <div className="flex space-x-2 text-center justify-center">
-          <span className="text-[16px] lg:text-2xl text-center">
-            P.S. The code of this site is on
-          </span>
-          <a
-            className="font-extrabold text-[16px] lg:text-2xl"
-            href="https://github.com/agrimCodesLikeIdiot/portfolio"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-        <div className="flex justify-center mt-2.5">
-          <Link href="/about">
-            <button className="w-[140px] h-[40px] rounded-t-lg bg-blue-500 text-white text-3xl font-bold rounded-r-lg">
-              About
-            </button>
-          </Link>
+          <p className="text-[14px] lg:text-lg font-semibold text-gray-500 lg:text-left text-center">
+            Hi, I am Agrim, a frontend developer and also the developer and owner{" "}
+            <br />
+            of this website. Welcome to my portfolio.
+          </p>
+          <br />
+          <div className="flex space-x-2">
+            <span className="text-[16px] lg:text-2xl text-center">
+              P.S. The code of this site is on
+            </span>
+            <a
+              className="font-extrabold text-[16px] lg:text-2xl"
+              href="https://github.com/agrimCodesLikeIdiot/portfolio"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+          <div className="flex mt-2.5">
+            <Link href="/about">
+              <button className="w-[140px] h-[40px] rounded-full border-[1px] text-lg font-bold border-black">
+                About
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-      <footer className="lg:block hidden fixed top-[50%] translate-y-[-50%] ml-[10px] left-0">
-        <div className="flex flex-col space-y-2 justify-center">
-          <img src="https://img.icons8.com/office/50/000000/react.png" />
-          <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
-          <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
-          <img src="https://img.icons8.com/color/50/000000/css3.png" />
-          <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
-          <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
-          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
-          <img src="https://img.icons8.com/color/50/000000/python.png" />
-        </div>
-      </footer>
     </div>
   );
 }
