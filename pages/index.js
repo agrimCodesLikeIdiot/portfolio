@@ -24,7 +24,9 @@ export default function Home() {
       </Head>
 
       <nav className="flex pl-3 pt-3">
-        <h1 className="text-2xl font-bold">@agrimf</h1>
+        <h1 className="text-2xl font-bold flex space-x-2">
+          अ @agrimf
+        </h1>
         <div className="absolute left-[50%] translate-x-[-50%] text-gray-400 font-bold">
           <div className="hidden lg:flex space-x-4 text-[14px] items-center pt-[8px]">
             <Link href="/about">About</Link>
@@ -104,28 +106,27 @@ export default function Home() {
       </nav>
       <div
         id="main-content"
-        className="flex space-x-5 lg:pt-[15%] pt-[100px] lg:pl-0 pl-[10px] fixed lg:left-[35%] lg:translate-x-[-35%]"
+        className="flex space-x-5 lg:pt-[15%] pt-[100px] lg:pl-0 pl-[10px] absolute lg:left-[35%] lg:translate-x-[-35%]"
       >
-        <img src="https://i.pinimg.com/564x/ef/45/38/ef45387351176cfb696d4aa990fad126.jpg" className="lg:flex hidden w-[300px] h-[340px] rounded-lg object-cover" />
+        <img
+          src="https://i.pinimg.com/564x/ef/45/38/ef45387351176cfb696d4aa990fad126.jpg"
+          className="lg:flex hidden w-[300px] h-[340px] rounded-lg object-cover"
+        />
         <div>
           <h1 className="lg:text-6xl font-extrabold text-5xl select-none o lg:text-left text-center">
-
             <Typewriter
               onInit={(typewriter) => {
-                typewriter
-                  .typeString("Developing...")
-                  .start();
+                typewriter.typeString("Developing...").start();
               }}
             />
           </h1>
           <br />
           <p className="text-[14px] lg:text-lg font-semibold text-gray-500 lg:text-left text-center">
-            Hi, I am Agrim, a frontend developer and also the developer and owner{" "}
-            <br />
-            of this website. Welcome to my portfolio.
+            Hi, I am Agrim, a frontend developer and also the developer and
+            <br /> owner of this website. Welcome to my portfolio.
           </p>
           <br />
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 justify-center lg:justify-start">
             <span className="text-[16px] lg:text-2xl text-center">
               P.S. The code of this site is on
             </span>
@@ -137,12 +138,55 @@ export default function Home() {
               GitHub
             </a>
           </div>
-          <div className="flex mt-2.5">
+          <div className="flex mt-2.5 justify-center lg:justify-start">
             <Link href="/about">
               <button className="w-[140px] h-[40px] rounded-full border-[1px] text-lg font-bold border-black">
                 About
               </button>
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className="mt-[590px]">
+        <hr />
+        <br />
+        <div>
+          <h1 className="text-5xl font-bold o text-center">
+            <Typewriter
+              onInit={(tw) => {
+                tw.typeString(`We build a desing by your prefrences`).start();
+              }}
+            />
+          </h1>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div className="mt-[30px]">
+          <h1 className="text-3xl font-bold o text-center">
+            What you will get?
+          </h1>
+          <br />
+          <div className="flex justify-center space-x-5">
+            <ul className="flex flex-col">
+              <li className="flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Fast & Refurbishable sites</span>
+              </li>
+              <li className="flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Temparory Hosting</span>
+              </li>
+              <li className="flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Open Source</span>
+              </li>
+            </ul>
+            <img
+              alt="Refurbish"
+              className="w-[100px] h-[100px] object-cover"
+              src="https://img.icons8.com/external-filled-outline-geotatah/100/000000/external-refurbish-reverse-logistics-filled-outline-filled-outline-geotatah.png"
+            />
           </div>
         </div>
       </div>
