@@ -24,19 +24,15 @@ export default function Home() {
       </Head>
       <nav className="flex pl-3 pt-3"></nav>
       <div className="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
-        <h1 className="text-2xl font-bold flex space-x-2 justify-center">@agrimf</h1>
-        <h1 className="font-mono lg:tracking-[30px] tracking-widest text-5xl l">
-          Welcome
+        <h1 className="font-mono tracking-widest text-7xl l flex justify-center">
+          404
         </h1>
         <span className="text-gray-500 font-bold text-[20px] flex justify-center">
           <pre className="flex font-sans">
             /*{" "}
             <Typewriter
               onInit={(e) => {
-                e.typeString("Welcome to")
-                  .pauseFor(2500)
-                  .deleteAll()
-                  .typeString("Portfolio of Agrim")
+                e.typeString("Page not found")
                   .start();
               }}
             />{" "}

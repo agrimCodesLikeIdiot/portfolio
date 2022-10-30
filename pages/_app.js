@@ -1,11 +1,12 @@
 import "../styles/globals.css";
 import NextNProgressbar from "nextjs-progressbar";
+import Navbar from "../pages/navbar"
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       {" "}
-      <NextNProgressbar color="black" /> <Component {...pageProps} />{" "}
+      <Navbar/> <NextNProgressbar color="black" /> <Component {...pageProps} />{" "}
     </>
   );
 }
