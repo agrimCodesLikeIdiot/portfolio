@@ -22,8 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
-      <div className="fixed top-0 left-0 right-0">
-      <nav className="flex pl-3 pt-3 bg-white border-b-2 pb-3">
+      <nav className="flex pl-3 pt-3 pb-3">
         <h1 className="text-2xl font-bold flex space-x-2">@agrimf</h1>
         <div className="lg:absolute lg:left-[50%] lg:translate-x-[-50%] text-gray-700 font-bold">
           <div className="hidden lg:flex text-left lg:mt-0 lg:mr-0 mr-[30px] mt-[30px] space-x-4 text-[14px] lg:items-center pt-[8px]">
@@ -117,7 +116,6 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      </div>
     </div>
   );
 }
