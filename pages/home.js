@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
+import mypic from "../public/typer1.png";
 
 export default function Home() {
   var $ = (e) => {
@@ -22,9 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
-      <nav className="flex pl-3 pt-3">
-        
-      </nav>
+      <nav className="flex pl-3 pt-3"></nav>
       <div
         id="main-content"
         className="flex space-x-5 lg:pt-[15%] pt-[100px] absolute lg:left-[35%] lg:translate-x-[-35%]"
@@ -107,6 +106,66 @@ export default function Home() {
               alt="Refurbish"
               className="w-[100px] h-[100px] object-cover"
               src="https://img.icons8.com/external-filled-outline-geotatah/100/000000/external-refurbish-reverse-logistics-filled-outline-filled-outline-geotatah.png"
+            />
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div className="mt-[30px]">
+          <h1 className="text-3xl font-bold o text-center">Featured project</h1>
+          <br />
+          <div className="flex lg:flex-row flex-col justify-center space-x-2">
+            <ul className="flex flex-col">
+              <li className="flex flex-col space-y-2">
+                <h1 className="text-3xl font-bold o lg:text-left text-center">
+                  Typer +
+                </h1>
+                <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
+                  Typer + is a minimal text editor for markdown files. The
+                  <br />
+                  editor is a Free and Open Source software (or FOSS) so you can
+                  <br />
+                  download the editor for free or get the source for free as
+                  <br />
+                  well. Typer + is written on JavaScript with Electron.js and
+                  <br />
+                  Next.js.
+                  <br />
+                </p>
+              </li>
+              <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Free & Open source</span>
+              </li>
+              <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Saves the data of user on LocalStorage</span>
+              </li>
+              <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Minimal</span>
+              </li>
+              <li className="mt-[30px] flex lg:justify-center justify-center">
+                <a href="">
+                  <button onClick={(e) => {
+                    e.preventDefault()
+                    window.open("https://drive.google.com/file/d/1_ZpxwrZnQQ8ItZ-N6eIb7X9aenE9GgSG/view?usp=share_link")
+                  }} className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2">
+                    <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
+                    <span>Download for linux</span>{" "}
+                  </button>
+                </a>
+              </li>
+            </ul>
+            <br />
+            <Image
+              alt="Refurbish"
+              className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
+              src={mypic}
+              width="600px"
+              height="400px"
+              id="hidden"
             />
           </div>
         </div>
