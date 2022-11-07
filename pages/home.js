@@ -150,7 +150,7 @@ export default function Home() {
                 <a href="">
                   <button onClick={(e) => {
                     e.preventDefault()
-                    window.open("https://drive.google.com/file/d/1_ZpxwrZnQQ8ItZ-N6eIb7X9aenE9GgSG/view?usp=share_link")
+                    window.open("https://github.com/agrimCodesLikeIdiot/Typer-Plus")
                   }} className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2">
                     <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
                     <span>Download for linux</span>{" "}
