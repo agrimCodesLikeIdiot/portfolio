@@ -176,7 +176,7 @@ export default function Home() {
           </div>
           <br />
           <br />
-          <div className="flex lg:flex-row flex-col justify-center space-x-2">
+          <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-2">
             <ul className="flex flex-col">
               <li className="flex flex-col space-y-2">
                 <h1 className="text-3xl font-bold o lg:text-left text-center">
