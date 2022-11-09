@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
 import m from "../public/m.jpg";
+import aqi from "../public/aqi.png";
 
 export default function Home() {
   var $ = (e) => {
@@ -26,7 +27,7 @@ export default function Home() {
 
       <div id="main-content">
         <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
-          <div className="flex space-x-5">
+          <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
             <div className="flex flex-col space-y-2">
               <h1 className="text-3xl lg:text-5xl font-bold">Think...</h1>
               <h1
@@ -56,26 +57,68 @@ export default function Home() {
                 Hello there my friend! Welcome to this site. I am Agrim, the
                 developer of this site... I can also make one for you. I am a
                 frontend developer I really love building websites and to make
-                the web better, currently I work with React, Next, TailwindCSS, Electron, Python and many more. I can also build a site for you :)
+                the web better, currently I work with React, Next, TailwindCSS,
+                Electron, Python and many more. I can also build a site for you
+                :)
               </p>
             </div>
-            <img className="w-[500px] h-[400px] lg:block hidden rounded-lg" src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+            <img
+              className="w-[500px] h-[400px] rounded-lg"
+              src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
+          </div>
+          <br />
+          <h1 className="font-bold text-5xl o text-center">For You</h1>
+          <br />
+          <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-24">
+            <ul className="flex flex-col">
+              <li className="flex flex-col space-y-2">
+                <h1 className="text-3xl font-bold o lg:text-left text-center">
+                  Temps & AQI
+                </h1>
+                <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
+                  Temps & AQI is a weather / aqi app which lets you know weather{" "}
+                  <br />
+                  of your city. Also gives a description + wind speed and Air{" "}
+                  <br />
+                  Quality of the city mentioned.
+                </p>
+              </li>
+              <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Free & Open source</span>
+              </li>
+              <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
+                <span className="text-green-500 text-2xl">✔</span>
+                <span>Temperature, Wind Speed, Description and AQI</span>
+              </li>
+              <li className="mt-[30px] flex lg:justify-center justify-center">
+                <a href="">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open("");
+                    }}
+                    className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
+                  >
+                    <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
+                    <span>Download for linux</span>{" "}
+                  </button>
+                </a>
+              </li>
+            </ul>
+            <br />
+            <Image
+              alt="Refurbish"
+              className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
+              src={aqi}
+              width="360px"
+              height="640px"
+              id="hidden"
+            />
           </div>
         </div>
       </div>
-      <footer className="lg:block hidden fixed top-[50%] translate-y-[-50%] mr-[10px] right-0">
-        <div className="flex flex-col space-y-2 justify-center">
-          <img src="https://img.icons8.com/office/50/000000/react.png" />
-          <img src="https://img.icons8.com/color/50/000000/javascript--v1.png" />
-          <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
-          <img src="https://img.icons8.com/color/50/000000/css3.png" />
-          <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" />
-          <img src="https://img.icons8.com/color/50/000000/nextjs.png" />
-          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" />
-          <img src="https://img.icons8.com/color/50/000000/python.png" />
-          <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/50/000000/external-apps-technology-prettycons-lineal-color-prettycons.png" />
-        </div>
-      </footer>
     </div>
   );
 }

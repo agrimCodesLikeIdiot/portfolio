@@ -47,6 +47,27 @@ export default function Home() {
             </button>
           </Link>
         </div>
+        <br />
+        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] bg-slate-100">
+          <div className="mr-0 ml-auto w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
+            <img src="https://img.icons8.com/color/36/null/javascript--v1.png" />
+          </div>
+          <h1 className="text-lg font-bold text-gray-500 font-sans">
+            Nov 9, 2022
+          </h1>
+          <h1 className="text-3xl font-bold o">What is Typer+?</h1>
+          <br />
+          <p className="text-gray-500">
+            What is Typer+? Why to use it & what you will get, all queries{" "}
+            <br />
+            resolved.
+          </p>
+          <Link href="/blogs/about-typer+">
+            <button className="bg-blue-500 w-[160px] h-[40px] text-white rounded-full mt-[10px] text-2xl font-bold">
+              Read More
+            </button>
+          </Link>
+        </div>
       </div>
       <footer></footer>
     </div>

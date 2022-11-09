@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {" "}
-      <Navbar/> <NextNProgressbar color="black" /> <Component {...pageProps} />{" "}
+      <Navbar/> <NextNProgressbar color="black" /> <Component {...pageProps} />{" "} 
     </>
   );
 }

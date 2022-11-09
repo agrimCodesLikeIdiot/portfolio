@@ -35,3 +35,14 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#s {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+#f {
+  position: absolute;
+  bottom: 0;
+}

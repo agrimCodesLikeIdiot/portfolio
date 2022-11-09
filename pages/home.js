@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
 import mypic from "../public/typer1.png";
-import aqi from "../public/aqi.png"
 
 export default function Home() {
   var $ = (e) => {
@@ -171,55 +170,6 @@ export default function Home() {
               src={mypic}
               width="600px"
               height="400px"
-              id="hidden"
-            />
-          </div>
-          <br />
-          <br />
-          <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-2">
-            <ul className="flex flex-col">
-              <li className="flex flex-col space-y-2">
-                <h1 className="text-3xl font-bold o lg:text-left text-center">
-                  Temps & AQI
-                </h1>
-                <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
-                  Temps & AQI is a weather / aqi app which lets you know weather <br/>
-                  of your city. Also gives a description + wind speed and Air <br/>
-                  Quality of the city mentioned.
-                </p>
-              </li>
-              <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Free & Open source</span>
-              </li>
-              <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Temperature, Wind Speed, Description and AQI</span>
-              </li>
-              <li className="mt-[30px] flex lg:justify-center justify-center">
-                <a href="">
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.open(
-                        ""
-                      );
-                    }}
-                    className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
-                  >
-                    <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
-                    <span>Download for linux</span>{" "}
-                  </button>
-                </a>
-              </li>
-            </ul>
-            <br />
-            <Image
-              alt="Refurbish"
-              className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
-              src={aqi}
-              width="360px"
-              height="640px"
               id="hidden"
             />
           </div>
