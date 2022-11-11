@@ -19,7 +19,7 @@ body {
 }
 h1 {
   font-family: "cursive";
-  background: -webkit-linear-gradient(45deg, #5f2c82, #49a09d);
+  background: -webkit-linear-gradient(45deg, #283c86, #45a247);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
