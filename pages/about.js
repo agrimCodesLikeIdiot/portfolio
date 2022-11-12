@@ -29,45 +29,35 @@ export default function Home() {
         <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
           <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
             <div className="flex flex-col space-y-2">
-              <h1 className="text-3xl lg:text-5xl font-bold">Think...</h1>
+              <h1 className="text-3xl lg:text-5xl font-bold">I like,</h1>
               <h1
-                className="text-5xl lg:text-7xl font-thin pl-[60px] o"
+                className="text-5xl lg:text-7xl font-thin pl-[30px] o"
                 id="demo"
               >
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString("Creative")
-                      .pauseFor(2500)
-                      .deleteAll()
-                      .typeString("Positive")
-                      .pauseFor(2500)
-                      .deleteAll()
-                      .typeString("Deep")
-                      .pauseFor(2500)
-                      .deleteAll()
-                      .typeString("Minimal")
-                      .pauseFor(2500)
-                      .start();
-                  }}
-                />
+                A Straight way - DEVELOPMENT.
               </h1>
               <br />
-              <p className="text-[14px] lg:text-lg text-gray-500 font-semibold">
-                Hello there my friend! Welcome to this site. I am Agrim, the
-                developer of this site... I can also make one for you. I am a
-                frontend developer I really love building websites and to make
-                the web better, currently I work with React, Next, TailwindCSS,
-                Electron, Python and many more. I can also build a site for you
-                :)
+              <p className="text-[10px] lg:text-lg text-gray-500 font-semibold">
+                Welcome my world, I am Agrim Singh. I am a frontend developer <br/>
+                hailing from India. Currently I work with Next.js and <br/>
+                tailwindcss.
               </p>
+              <br/><br/>
+              <div className="p-2.5 w-[340px] lg:w-[540px] bg-black text-white text-2xl flex items-center justify-center -rotate-[5deg] lg:-rotate-[10deg]">
+                <h1 className="a">First, Solve the problem. <br className="lg:hidden block" /> Then, write the code</h1>
+              </div>
             </div>
+              <div className="lg:hidden block">
+              <br/><br/><br/>
+              <br/><br/><br/>
+              </div>
             <img
-              className="w-[500px] h-[400px] rounded-lg"
+              className="w-[360px] lg:w-[500px] h-[400px] rounded-lg"
               src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             />
           </div>
           <br />
+          <div className="lg:block hidden">
           <h1 className="font-bold text-5xl o text-center">For You</h1>
           <br />
           <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-24">
@@ -116,6 +106,7 @@ export default function Home() {
               height="640px"
               id="hidden"
             />
+          </div>
           </div>
         </div>
       </div>

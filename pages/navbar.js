@@ -23,7 +23,7 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
       <nav className="flex pl-3 pt-4 pb-4 backdrop-blur-md border-b-2">
-        <h1 className="text-2xl font-bold flex space-x-2 select-none">@frontendagrim</h1>
+        <h1 className="text-2xl font-bold flex space-x-2 select-none lg:flex hidden">@frontendagrim</h1>
         <div className="lg:absolute lg:left-[50%] lg:translate-x-[-50%] text-gray-700 font-bold">
           <div className="hidden lg:flex text-left lg:mt-0 lg:mr-0 mr-[30px] mt-[30px] space-x-4 text-[14px] lg:items-center pt-[8px]">
             <Link href="/home">Home</Link>
@@ -37,7 +37,7 @@ export default function Home() {
           id="m-menu"
           className="z-index-[999] lg:absolute lg:left-[50%] lg:translate-x-[-50%] text-gray-400 font-bold"
         >
-          <div className="lg:hidden md:hidden flex text-left ml-[20px] space-x-3 text-[14px] lg:items-center pt-[8px]">
+          <div className="lg:hidden md:hidden flex text-left ml-[15%] space-x-3 text-[14px] lg:items-center pt-[8px]">
             <Link href="/home">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/site">Pricing</Link>

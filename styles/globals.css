@@ -35,6 +35,12 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.a {
+  font-family: "Calligraphy";
+  background: -webkit-linear-gradient(45deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #s {
   position: fixed;
   top: 0;
