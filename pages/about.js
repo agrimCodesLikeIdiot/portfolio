@@ -38,7 +38,7 @@ export default function Home() {
               </h1>
               <br />
               <p className="text-[10px] lg:text-lg text-gray-500 font-semibold">
-                Welcome my world, I am Agrim Singh. I am a frontend developer <br/>
+                Welcome to my world, I am Agrim Singh. I am a frontend developer <br/>
                 hailing from India. Currently I work with Next.js and <br/>
                 tailwindcss.
               </p>
