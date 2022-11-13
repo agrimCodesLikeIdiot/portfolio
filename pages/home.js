@@ -39,13 +39,13 @@ export default function Home() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(`Frontend Developer`)
+                  .typeString(`Crafted by - HANDS`)
                   .pauseFor(1500)
                   .deleteAll()
-                  .typeString("UI/UX Designer")
+                  .typeString(`Perfection by - HANDS`)
                   .pauseFor(1500)
                   .deleteAll()
-                  .typeString("home(true)")
+                  .typeString(`Welcome to my World!`)
                   .start();
               }}
             />
@@ -82,15 +82,9 @@ export default function Home() {
         <br />
         <div>
           <h1 className="text-5xl font-bold o text-center">
-            <Typewriter
-              onInit={(tw) => {
-                tw.typeString(`We build a desing by your prefrences`).start();
-              }}
-            />
+            Building Sites - By your prefrences
           </h1>
         </div>
-        <br />
-        <hr />
         <br />
         <div className="mt-[30px]">
           <h1 className="text-3xl font-bold o text-center">

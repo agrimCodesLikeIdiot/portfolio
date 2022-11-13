@@ -52,3 +52,6 @@ h1 {
   position: absolute;
   bottom: 0;
 }
+img {
+  box-shadow: black;
+}
