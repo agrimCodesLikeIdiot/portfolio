@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
-      <nav className="flex pl-3 pt-4 pb-4 backdrop-blur-md border-b-2">
+      <nav className="shadow-sm flex pl-3 pt-4 pb-4 backdrop-blur-md border-b-2">
         <h1 className="text-2xl font-bold flex space-x-2 select-none lg:flex hidden">@frontendagrim</h1>
         <div className="lg:absolute lg:left-[50%] lg:translate-x-[-50%] text-gray-700 font-bold">
           <div className="hidden lg:flex text-left lg:mt-0 lg:mr-0 mr-[30px] mt-[30px] space-x-4 text-[14px] lg:items-center pt-[8px]">

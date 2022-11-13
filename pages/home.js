@@ -28,7 +28,7 @@ export default function Home() {
       <nav className="flex pl-3 pt-3"></nav>
       <div
         id="main-content"
-        className="flex space-x-5 lg:pt-[15%] pt-[100px] absolute lg:left-[35%] lg:translate-x-[-35%]"
+        className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[35%] lg:translate-x-[-35%]"
       >
         <img
           src="https://i.pinimg.com/564x/ef/45/38/ef45387351176cfb696d4aa990fad126.jpg"

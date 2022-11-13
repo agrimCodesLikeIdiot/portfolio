@@ -25,7 +25,7 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
 
-      <div id="main-content">
+      <div id="main-content" className="lg:block hidden">
         <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
           <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
             <div className="flex flex-col space-y-2">
@@ -37,20 +37,29 @@ export default function Home() {
                 A Straight way - DEVELOPMENT.
               </h1>
               <br />
-              <p className="text-[10px] lg:text-lg text-gray-500 font-semibold">
-                Welcome to my world, I am Agrim Singh. I am a frontend developer <br/>
-                hailing from India. Currently I work with Next.js and <br/>
+              <p className="pl-[30px] text-[10px] lg:text-lg text-gray-500 font-semibold">
+                Welcome to my world, I am Agrim Singh. I am a frontend developer{" "}
+                <br />
+                hailing from India. Currently I work with Next.js and <br />
                 tailwindcss.
               </p>
-              <br/><br/>
+              <br />
+              <br />
               <div className="p-2.5 w-[340px] lg:w-[540px] bg-black text-white text-2xl flex items-center justify-center -rotate-[5deg] lg:-rotate-[10deg]">
-                <h1 className="a">First, Solve the problem. <br className="lg:hidden block" /> Then, write the code</h1>
+                <h1 className="a">
+                  First, Solve the problem. <br className="lg:hidden block" />{" "}
+                  Then, write the code
+                </h1>
               </div>
             </div>
-              <div className="lg:hidden block">
-              <br/><br/><br/>
-              <br/><br/><br/>
-              </div>
+            <div className="lg:hidden block">
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
             <img
               className="w-[360px] lg:w-[500px] h-[400px] rounded-lg"
               src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -58,55 +67,141 @@ export default function Home() {
           </div>
           <br />
           <div className="lg:block hidden">
-          <h1 className="font-bold text-5xl o text-center">For You</h1>
-          <br />
-          <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-24">
-            <ul className="flex flex-col">
-              <li className="flex flex-col space-y-2">
-                <h1 className="text-3xl font-bold o lg:text-left text-center">
-                  Temps & AQI
-                </h1>
-                <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
-                  Temps & AQI is a weather / aqi app which lets you know weather{" "}
-                  <br />
-                  of your city. Also gives a description + wind speed and Air{" "}
-                  <br />
-                  Quality of the city mentioned.
-                </p>
-              </li>
-              <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Free & Open source</span>
-              </li>
-              <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Temperature, Wind Speed, Description and AQI</span>
-              </li>
-              <li className="mt-[30px] flex lg:justify-center justify-center">
-                <a href="">
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.open("");
-                    }}
-                    className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
-                  >
-                    <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
-                    <span>Download for linux</span>{" "}
-                  </button>
-                </a>
-              </li>
-            </ul>
+            <h1 className="font-bold text-5xl o text-center">For You</h1>
             <br />
-            <Image
-              alt="Refurbish"
-              className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
-              src={aqi}
-              width="360px"
-              height="640px"
-              id="hidden"
-            />
+            <div className="flex lg:flex-row flex-col lg:ml-[9%] ml-0 lg:justify-start justify-center space-x-24">
+              <ul className="flex flex-col">
+                <li className="flex flex-col space-y-2">
+                  <h1 className="text-3xl font-bold o lg:text-left text-center">
+                    Temps & AQI
+                  </h1>
+                  <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
+                    Temps & AQI is a weather / aqi app which lets you know
+                    weather <br />
+                    of your city. Also gives a description + wind speed and Air{" "}
+                    <br />
+                    Quality of the city mentioned.
+                  </p>
+                </li>
+                <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
+                  <span className="text-green-500 text-2xl">✔</span>
+                  <span>Free & Open source</span>
+                </li>
+                <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
+                  <span className="text-green-500 text-2xl">✔</span>
+                  <span>Temperature, Wind Speed, Description and AQI</span>
+                </li>
+                <li className="mt-[30px] flex lg:justify-center justify-center">
+                  <a href="">
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open("");
+                      }}
+                      className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
+                    >
+                      <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
+                      <span>Download for linux</span>{" "}
+                    </button>
+                  </a>
+                </li>
+              </ul>
+              <br />
+              <Image
+                alt="Refurbish"
+                className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
+                src={aqi}
+                width="360px"
+                height="640px"
+                id="hidden"
+              />
+            </div>
           </div>
+        </div>
+      </div>
+      <div id="main-content" className="lg:hidden block">
+        <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
+          <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
+            <div className="flex flex-col space-y-2">
+              <h1 className="text-2xl lg:text-5xl font-bold">I like,</h1>
+              <h1
+                className="text-3xl lg:text-7xl font-thin pl-[30px] o"
+                id="demo"
+              >
+                A Straight way - DEVELOPMENT.
+              </h1>
+              <br />
+              <p className="text-[10px] lg:text-lg text-gray-500 font-semibold">
+                Welcome to my world, I am Agrim Singh. I am a frontend developer{" "}
+                <br />
+                hailing from India. Currently I work with Next.js and <br />
+                tailwindcss.
+              </p>
+              <br />
+              <br />
+              <div className="p-1 w-[340px] lg:w-[540px] bg-black text-white text-[14px] flex items-center justify-center -rotate-[5deg] lg:-rotate-[10deg]">
+                <h1 className="a">
+                  First, Solve the problem. Then, write the code
+                </h1>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div>
+            <h1 className="font-bold text-5xl o text-center">For You</h1>
+            <br />
+            <div className="flex flex-col lg:justify-start justify-center">
+              <ul className="flex flex-col">
+                <li className="flex flex-col space-y-2">
+                  <h1 className="text-3xl font-bold o lg:text-left text-center">
+                    Temps & AQI
+                  </h1>
+                  <p className="lg:text-lg text-[12px] font-bold text-gray-500 lg:text-left text-center">
+                    Temps & AQI is a weather / aqi app which lets you know
+                    weather <br />
+                    of your city. Also gives a description + wind speed and Air{" "}
+                    <br />
+                    Quality of the city mentioned.
+                  </p>
+                </li>
+                <li className="lg:pl-0 pl-2.5 mt-[30px] flex space-x-2 items-center font-bold">
+                  <span className="text-green-500 text-2xl">✔</span>
+                  <span>Free & Open source</span>
+                </li>
+                <li className="lg:pl-0 pl-2.5 flex space-x-2 items-center font-bold">
+                  <span className="text-green-500 text-2xl">✔</span>
+                  <span>Temperature, Wind Speed, Description and AQI</span>
+                </li>
+                <li className="mt-[30px] flex lg:justify-center justify-center">
+                  <a href="">
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open("");
+                      }}
+                      className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
+                    >
+                      <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
+                      <span>Download for linux</span>{" "}
+                    </button>
+                  </a>
+                </li>
+              </ul>
+              <br />
+              <Image
+                alt="Refurbish"
+                className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
+                src={aqi}
+                width="360px"
+                height="640px"
+                id="hidden"
+              />
+            </div>
           </div>
         </div>
       </div>
