@@ -24,7 +24,9 @@ export default function Home() {
       </Head>
       <nav className="flex pl-3 pt-3"></nav>
       <div className="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
-        <h1 className="text-2xl font-bold flex space-x-2 justify-center">@frontendagrim</h1>
+        <h1 className="text-2xl font-bold flex space-x-2 justify-center">
+          @frontendagrim
+        </h1>
         <h1 className="font-mono lg:tracking-[30px] tracking-widest text-5xl l">
           Welcome
         </h1>
@@ -33,8 +35,7 @@ export default function Home() {
             /*{" "}
             <Typewriter
               onInit={(e) => {
-                e.typeString("Made on Next.js, Tailwind CSS")
-                  .start();
+                e.typeString("Made on Next.js, Tailwind CSS").start();
               }}
             />{" "}
             */
