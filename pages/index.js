@@ -33,10 +33,7 @@ export default function Home() {
             /*{" "}
             <Typewriter
               onInit={(e) => {
-                e.typeString("Welcome to")
-                  .pauseFor(2500)
-                  .deleteAll()
-                  .typeString("Portfolio of Agrim")
+                e.typeString("Made on Next.js, Tailwind CSS")
                   .start();
               }}
             />{" "}
