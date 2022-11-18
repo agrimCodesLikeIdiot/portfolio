@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
 import mypic from "../public/typer1.png";
@@ -14,6 +14,25 @@ export default function Home() {
 
   const [term, setterm] = useState(null);
   const router = useRouter();
+
+  useEffect(() => {
+    window.onload = () => {
+      const getCenter = (element) => {
+        const { left, top, width, height } = element.getBoundingClientRect();
+        return { x: left + width / 2, y: top + height / 2 };
+      }
+
+      const arrow = document.querySelector("#arrow");
+      const arrowCenter = getCenter(arrow);
+      arrow.addEventListener("mousemove", ({ clientX, clientY }) => {
+        const angle = Math.atan2(
+          clientY - arrowCenter.y,
+          clientX - arrowCenter.x
+        );
+        arrow.style.transform = `rotate(${angle}rad)`;
+      });
+    };
+  }, [typeof window != "undefined"]);
 
   return (
     <div className={styles.container}>
@@ -39,20 +58,14 @@ export default function Home() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(`Crafted by - HANDS`)
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .typeString(`Perfection by - HANDS`)
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .typeString(`Welcome to my World!`)
+                  .typeString(`I'm Agrim,`)
                   .start();
               }}
             />
           </h1>
           <br />
-          <p className="text-[14px] lg:text-lg font-semibold text-gray-500 lg:text-left text-center">
-            Hi, I am Agrim, a frontend developer and also the developer and
+          <p className="text-[12px] lg:text-lg font-semibold text-gray-500 lg:text-left text-center">
+            A frontend developer and also the developer and
             <br /> owner of this website. Welcome to my portfolio.
           </p>
           <br />
@@ -178,6 +191,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <div id="arrow" className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90">frontendagrim@gmail.com</div>
       </div>
     </div>
   );
