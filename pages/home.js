@@ -20,7 +20,7 @@ export default function Home() {
       const getCenter = (element) => {
         const { left, top, width, height } = element.getBoundingClientRect();
         return { x: left + width / 2, y: top + height / 2 };
-      }
+      };
 
       const arrow = document.querySelector("#arrow");
       const arrowCenter = getCenter(arrow);
@@ -47,46 +47,42 @@ export default function Home() {
       <nav className="flex pl-3 pt-3"></nav>
       <div
         id="main-content"
-        className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[35%] lg:translate-x-[-35%]"
+        className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
       >
-        <img
-          src="https://i.pinimg.com/564x/ef/45/38/ef45387351176cfb696d4aa990fad126.jpg"
-          className="lg:flex hidden w-[300px] h-[340px] rounded-lg object-cover"
-        />
         <div>
-          <h1 className="text-center lg:text-6xl font-extrabold text-5xl select-none o lg:text-left text-center">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString(`I'm Agrim,`)
-                  .start();
-              }}
-            />
+          <h1 className="flex space-x-2 text-3xl font-semibold tracking-widest text-center justify-center l">
+            NEXT<span className="text-[14px] font-mono pt-2">.js</span>
           </h1>
           <br />
-          <p className="text-[12px] lg:text-lg font-semibold text-gray-500 lg:text-left text-center">
-            A frontend developer and also the developer and
-            <br /> owner of this website. Welcome to my portfolio.
+          <h1 className="lg:text-7xl text-5xl o font-bold text-center">
+            Dynamic without limits
+          </h1>
+          <br />
+          <p className="text-center lg:text-lg text-[14px] text-gray-500 font-bold text-center">
+            Hello. I'm Agrim, A frontend developer from India
           </p>
           <br />
-          <div className="flex space-x-2 justify-center lg:justify-start">
-            <span className="text-[16px] lg:text-2xl text-center">
-              P.S. The code of this site is on
-            </span>
-            <a
-              className="font-extrabold text-[16px] lg:text-2xl"
-              href="https://github.com/agrimCodesLikeIdiot/portfolio"
-              target="_blank"
+          <div className="flex space-x-2 justify-center">
+            <button
+              onClick={() => router.push("/site")}
+              className="lg:w-[200px] w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center font-mono space-x-2"
             >
-              GitHub
-            </a>
-          </div>
-          <div className="flex mt-2.5 justify-center lg:justify-start">
-            <Link href="/about">
-              <button className="w-[140px] h-[40px] rounded-full border-[1px] text-lg font-bold border-black">
-                About
-              </button>
-            </Link>
+              <img
+                src="https://img.icons8.com/windows/32/FFFFFF/launch-browser.png"
+                className="lg:block hidden"
+              />
+              <span className="lg:pt-1.5">Start a Site</span>{" "}
+            </button>
+            <button
+              onClick={() => router.push("/about")}
+              className="lg:w-[200px] w-[160px] h-[40px] rounded-full font-bold border-black border-[1px] flex justify-center items-center font-mono space-x-2"
+            >
+              <img
+                src="https://img.icons8.com/ios-glyphs/32/null/info--v1.png"
+                className="lg:block hidden"
+              />
+              <span className="lg:pt-1.5">About me</span>{" "}
+            </button>
           </div>
         </div>
       </div>
@@ -191,7 +187,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="arrow" className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90">frontendagrim@gmail.com</div>
+        <div
+          id="arrow"
+          className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90"
+        >
+          frontendagrim@gmail.com
+        </div>
       </div>
     </div>
   );
