@@ -143,9 +143,9 @@ export default function Home() {
           </button>
           <button
             className="text-lg font-semibold text-gray-500"
-            onClick={() => window.open()}
+            onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}
           >
-            Coming Soon...
+            Secret~
           </button>
         </div>
       </div>
