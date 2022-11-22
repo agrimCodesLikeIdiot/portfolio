@@ -83,6 +83,9 @@ export default function Home() {
               />
               <span className="lg:pt-1.5">About me</span>{" "}
             </button>
+            <button onClick={() => window.open("https://github.com/agrimCodesLikeIdiot/portfolio/")}>
+              <img src="https://img.icons8.com/ios-glyphs/40/null/github.png" />
+            </button>
           </div>
         </div>
       </div>
@@ -186,12 +189,6 @@ export default function Home() {
               id="hidden"
             />
           </div>
-        </div>
-        <div
-          id="arrow"
-          className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90"
-        >
-          frontendagrim@gmail.com
         </div>
       </div>
     </div>
