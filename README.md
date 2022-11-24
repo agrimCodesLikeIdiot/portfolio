@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">This is repository of the website: <a href="http://fagrim.netlify.app/" target="_blank">https://fagrim.netlify.app</a>.</h4>
+<h4 align="center">This is repository of the website:   <Link href="http://fagrim.netlify.app/" target="_blank">https://fagrim.netlify.app</a>.</h4>
 
 <p align="center">
   Built on Next.js

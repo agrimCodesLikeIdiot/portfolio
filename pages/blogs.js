@@ -26,7 +26,7 @@ export default function Home() {
         id="main-content"
         className="lg:pt-[10%] pt-[100px] absolute left-[50%] translate-x-[-50%]"
       >
-        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] bg-slate-100">
+        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] border-[1px]">
           <div className="mr-0 ml-auto w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
             <img src="https://img.icons8.com/color/36/000000/nextjs.png" />
           </div>
@@ -48,7 +48,7 @@ export default function Home() {
           </Link>
         </div>
         <br />
-        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] bg-slate-100">
+        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] border-[1px]">
           <div className="mr-0 ml-auto w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
             <img src="https://img.icons8.com/color/36/null/javascript--v1.png" />
           </div>
@@ -63,6 +63,25 @@ export default function Home() {
             resolved.
           </p>
           <Link href="/blogs/about-typer+">
+            <button className="bg-blue-500 w-[160px] h-[40px] text-white rounded-full mt-[10px] text-2xl font-bold">
+              Read More
+            </button>
+          </Link>
+        </div>
+        <br />
+        <div className="w-[330px] lg:w-[800px] p-3 rounded-lg border-[1px] border-[1px]">
+          <div className="mr-0 ml-auto w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center">
+            <img src="https://img.icons8.com/color/36/null/javascript--v1.png" />
+          </div>
+          <h1 className="text-lg font-bold text-gray-500 font-sans">
+            Nov 24, 2022
+          </h1>
+          <h1 className="text-3xl font-bold o">Making a growing button</h1>
+          <br />
+          <p className="text-gray-500">
+            Lets make a button which grows on hover
+          </p>
+          <Link href="/blogs/growing-button">
             <button className="bg-blue-500 w-[160px] h-[40px] text-white rounded-full mt-[10px] text-2xl font-bold">
               Read More
             </button>

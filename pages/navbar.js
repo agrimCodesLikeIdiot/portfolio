@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
-      <nav className="shadow-sm flex pl-3 pt-4 pb-4 backdrop-blur-md">
+      <nav className="shadow-sm flex pl-3 pt-4 pb-4 shadow-lg bg-white">
         <div
           className="text-2xl font-bold bg-black text-white p-[1px] hidden lg:flex justify-center select-none"
           onClick={() => window.open("https://fagrim.netlify.app")}
@@ -123,9 +123,10 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <hr />
-      <div className="hidden lg:flex pl-3 pt-2 pb-2 backdrop-blur-md border-b-2">
-        <h1 id="moving" className="text-lg animate-bounce l">Projects -&gt;</h1>
+      <div className="hidden lg:flex pl-3 pt-2 pb-2 backdrop-blur-md border-b-[1px]">
+        <h1 id="moving" className="text-lg animate-bounce l">
+          Projects -&gt;
+        </h1>
         <div className="flex space-x-5 absolute left-[50%] translate-x-[-50%]">
           <button
             className="text-lg font-semibold l"
@@ -137,24 +138,28 @@ export default function Home() {
           </button>
           <button
             className="text-lg font-semibold l"
-            onClick={() => window.open("https://github.com/agrimCodesLikeIdiot/AQI")}
+            onClick={() =>
+              window.open("https://github.com/agrimCodesLikeIdiot/AQI")
+            }
           >
             AQI
           </button>
           <button
             className="text-lg font-semibold text-gray-500"
-            onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}
+            onClick={() =>
+              window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            }
           >
             Secret~
           </button>
         </div>
       </div>
       <div
-          id="arrow"
-          className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90"
-        >
-          frontendagrim@gmail.com
-        </div>
+        id="arrow"
+        className="fixed top-[50%] translate-x-[-50%] left-0 lg:block hidden text-gray-500 font-bold ml-5 rotate-90"
+      >
+        frontendagrim@gmail.com
+      </div>
     </div>
   );
 }

@@ -50,9 +50,24 @@ export default function Home() {
         className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
       >
         <div>
-          <h1 className="flex space-x-2 text-3xl font-semibold tracking-widest text-center justify-center l">
-            NEXT<span className="text-[14px] font-mono pt-2">.js</span>
-          </h1>
+          <div className="flex space-x-10 justify-center">
+            <h1 className="flex space-x-2 text-3xl font-semibold tracking-widest text-center justify-center l">
+              NEXT<span className="text-[14px] font-mono pt-2">.js</span>
+            </h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#000000"
+                d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+              ></path>
+            </svg>
+          </div>
           <br />
           <h1 className="lg:text-7xl text-5xl o font-bold text-center">
             Dynamic without limits
@@ -65,7 +80,7 @@ export default function Home() {
           <div className="flex space-x-2 justify-center">
             <button
               onClick={() => router.push("/site")}
-              className="lg:w-[200px] w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center font-mono space-x-2"
+              className="lg:w-[200px] transition ease-in-out delay-150 hover:scale-105 w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center font-mono space-x-2"
             >
               <img
                 src="https://img.icons8.com/windows/32/FFFFFF/launch-browser.png"
@@ -75,7 +90,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => router.push("/about")}
-              className="lg:w-[200px] w-[160px] h-[40px] rounded-full font-bold border-black border-[1px] flex justify-center items-center font-mono space-x-2"
+              className="lg:w-[200px] transition ease-in-out delay-150 hover:scale-105 w-[160px] h-[40px] rounded-full font-bold border-black border-[1px] flex justify-center items-center font-mono space-x-2"
             >
               <img
                 src="https://img.icons8.com/ios-glyphs/32/null/info--v1.png"
@@ -83,7 +98,12 @@ export default function Home() {
               />
               <span className="lg:pt-1.5">About me</span>{" "}
             </button>
-            <button onClick={() => window.open("https://github.com/agrimCodesLikeIdiot/portfolio/")}>
+            <button
+              onClick={() =>
+                window.open("https://github.com/agrimCodesLikeIdiot/portfolio/")
+              }
+              className="transition ease-in-out delay-150 hover:scale-105"
+            >
               <img src="https://img.icons8.com/ios-glyphs/40/null/github.png" />
             </button>
           </div>
@@ -163,7 +183,7 @@ export default function Home() {
                 <span>Minimal</span>
               </li>
               <li className="mt-[30px] flex lg:justify-center justify-center">
-                <a href="">
+                <Link href="">
                   <button
                     onClick={(e) => {
                       e.preventDefault();
@@ -176,7 +196,7 @@ export default function Home() {
                     <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
                     <span>Download for linux</span>{" "}
                   </button>
-                </a>
+                </Link>
               </li>
             </ul>
             <br />

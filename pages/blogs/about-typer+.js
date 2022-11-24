@@ -38,7 +38,7 @@ export default function Home() {
         <br />
         <p className="text-[14px] text-base lg:text-lg text-gray-500  tracking-tightest break-words">
           Typer+ Built on Electron and Next frameworks on{" "}
-          <a
+            <a
             href="https://google.com/search?q=JavaScript"
             className="ml-2 mr-2 font-bold text-blue-500 underline"
           >
@@ -58,7 +58,7 @@ export default function Home() {
         <br />
         <h1 className="text-3xl font-semibold o">Download</h1>
         <br />
-        <a href="">
+          <a href="">
           <button
             onClick={(e) => {
               e.preventDefault();
