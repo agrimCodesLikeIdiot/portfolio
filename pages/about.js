@@ -25,13 +25,13 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
 
-      <div id="main-content" className="lg:block hidden">
+      <div id="main-content" className="">
         <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
           <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
             <div className="flex flex-col space-y-2">
               <h1 className="text-3xl lg:text-5xl font-bold">I like,</h1>
               <h1
-                className="text-5xl lg:text-7xl font-thin pl-[30px] o"
+                className="text-4xl lg:text-7xl font-thin pl-[30px] o"
                 id="demo"
               >
                 A Straight way - DEVELOPMENT.

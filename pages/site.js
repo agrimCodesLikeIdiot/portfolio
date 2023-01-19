@@ -25,7 +25,7 @@ export default function Home() {
 
       <div
         id="main-content"
-        className="pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
+        className="pt-[180px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
       >
         <h1 className="text-5xl font-bold text-center o">
           Get yourself a site

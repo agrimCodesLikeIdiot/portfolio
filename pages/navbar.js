@@ -32,6 +32,7 @@ export default function Home() {
         <div className="lg:absolute lg:left-[50%] lg:translate-x-[-50%] text-gray-700 font-bold">
           <div className="hidden lg:flex text-left lg:mt-0 lg:mr-0 mr-[30px] mt-[30px] space-x-4 text-[14px] lg:items-center pt-[8px]">
             <Link href="/home">Home</Link>
+            <Link href="/typer+">Typer+</Link>
             <Link href="/about">About</Link>
             <Link href="/site">Get a site</Link>
             <Link href="/blogs">Blogs</Link>
@@ -142,7 +143,7 @@ export default function Home() {
               window.open("https://github.com/agrimCodesLikeIdiot/AQI")
             }
           >
-            AQI
+            AQI: The Weather App
           </button>
           <button
             className="text-lg font-semibold text-gray-500"

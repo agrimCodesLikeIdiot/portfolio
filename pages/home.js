@@ -51,9 +51,8 @@ export default function Home() {
       >
         <div>
           <div className="flex space-x-10 justify-center">
-            <h1 className="flex space-x-2 text-3xl font-semibold tracking-widest text-center justify-center l">
-              NEXT<span className="text-[14px] font-mono pt-2">.js</span>
-            </h1>
+            <h1 className="flex items-center l">I like ----&gt; </h1>
+            <img src="https://img.icons8.com/color/48/000000/nextjs.png" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -67,14 +66,17 @@ export default function Home() {
                 d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
               ></path>
             </svg>
+            <img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/48/null/external-Calculus-artificial-intelligence-solidglyph-m-oki-orlando.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/48/null/trigonometry.png"/>
           </div>
           <br />
           <h1 className="lg:text-7xl text-5xl o font-bold text-center">
-            Dynamic without limits
+            The Productivity Tool, Typer+
           </h1>
           <br />
           <p className="text-center lg:text-lg text-[14px] text-gray-500 font-bold text-center">
-            Hello. I'm Agrim, A frontend developer from India
+            Hello. Welcome to the Portfolio of Agrim Singh
+            <br /> and official website of Typer+
           </p>
           <br />
           <div className="flex space-x-2 justify-center">
@@ -187,9 +189,7 @@ export default function Home() {
                   <button
                     onClick={(e) => {
                       e.preventDefault();
-                      window.open(
-                        "https://github.com/agrimCodesLikeIdiot/Typer-Plus"
-                      );
+                      router.push("/typer+")
                     }}
                     className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
                   >
