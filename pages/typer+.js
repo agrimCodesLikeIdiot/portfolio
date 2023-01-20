@@ -80,7 +80,7 @@ export default function Home() {
                 <span className="text-green-500 text-2xl">✔</span>
                 <span>Minimal</span>
               </li>
-              <li className="mt-[30px] flex lg:justify-center justify-center">
+              <li className="mt-[30px]">
                 <Link href="">
                   <button
                     onClick={(e) => {
@@ -92,7 +92,7 @@ export default function Home() {
                     className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
                   >
                     <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
-                    <span>Download for linux</span>{" "}
+                    <span>Download</span>{" "}
                   </button>
                 </Link>
               </li>

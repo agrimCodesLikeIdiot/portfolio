@@ -50,7 +50,7 @@ export default function Home() {
         className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
       >
         <div>
-          <div className="flex space-x-10 justify-center">
+          <div className="flex lg:space-x-10 space-x-2 justify-center">
             <h1 className="flex items-center l">I like ----&gt; </h1>
             <img src="https://img.icons8.com/color/48/000000/nextjs.png" />
             <svg
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[590px]">
+      <div className="mt-[680px]">
         <hr />
         <br />
         <div>
@@ -184,17 +184,16 @@ export default function Home() {
                 <span className="text-green-500 text-2xl">✔</span>
                 <span>Minimal</span>
               </li>
-              <li className="mt-[30px] flex lg:justify-center justify-center">
+              <li className="mt-[30px]">
                 <Link href="">
                   <button
                     onClick={(e) => {
                       e.preventDefault();
                       router.push("/typer+")
                     }}
-                    className="w-[320px] h-[40px] flex justify-center items-center rounded-full bg-blue-500 text-white text-2xl font-bold space-x-2"
+                    className="text-2xl font-semibold l"
                   >
-                    <img src="https://img.icons8.com/color/36/000000/linux--v1.png" />{" "}
-                    <span>Download for linux</span>{" "}
+                    <span>Learn More &gt;</span>
                   </button>
                 </Link>
               </li>
