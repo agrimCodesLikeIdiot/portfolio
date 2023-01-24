@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <>
       {" "}
       <Navbar /> <NextNProgressbar color="black" /> <Component {...pageProps} />{" "}
-      <Footer />{" "}
     </>
   );
 }

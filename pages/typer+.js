@@ -216,6 +216,16 @@ export default function Home() {
           </ul>
         </div>
       </div>
+      <div
+        id=""
+        className="relative bottom-0 left-0 right-0 w-[100vw]"
+      >
+        <br />
+        <hr />
+        <br />
+        <h1 className="l font-light text-center">Made with ❤️ using Next.js and Tailwind CSS | © 2022 Agrim Singh</h1>
+        <br />
+      </div>
     </div>
   );
 }

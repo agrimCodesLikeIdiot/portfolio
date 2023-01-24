@@ -133,10 +133,20 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        <div className="mt-[530px] mb-[30px] flex justify-center">
+          <h1 onClick={()=>router.push("/contact")} className="l hover:underline hover:cursor-pointer">Got your pack? Let's start the payment, just contact me!</h1>
+        </div>
       </div>
-      <br />
-      <footer></footer>
-      <br />
+      <div
+        id=""
+        className="relative bottom-0 left-0 right-0 w-[100vw]"
+      >
+        <br />
+        <hr />
+        <br />
+        <h1 className="l font-light text-center">Made with ❤️ using Next.js and Tailwind CSS | © 2022 Agrim Singh</h1>
+        <br />
+      </div>
     </div>
   );
 }
