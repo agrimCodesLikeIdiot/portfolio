@@ -42,7 +42,7 @@ export default function Home() {
         <br />
         <div className="flex lg:space-y-0 space-y-2 lg:flex-row flex-col lg:space-x-2 lg:inherit absolute left-[50%] translate-x-[-50%]">
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-            <h1 className="o text-3xl font-bold">Free</h1>
+            <h1 className="o text-3xl font-bold">α | Alpha</h1>
             <br />
             <p className="lg:text-2xl text-lg text-gray-500">
               This is a free pack for small projects like a web app.
@@ -51,7 +51,7 @@ export default function Home() {
             <hr />
             <br />
             <br />
-            <h1 className="text-2xl o">What do I get for free?</h1>
+            <h1 className="text-2xl o">Free</h1>
             <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
@@ -72,7 +72,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-            <h1 className="o text-3xl font-bold">MPA</h1>
+            <h1 className="o text-3xl font-bold">β | Beta</h1>
             <br />
             <p className="lg:text-2xl text-lg text-gray-500">
               This is a $2 pack for medium sized projects. Example - Portfolio
@@ -81,7 +81,7 @@ export default function Home() {
             <hr />
             <br />
             <br />
-            <h1 className="text-2xl o">What do I get for $2?</h1>
+            <h1 className="text-2xl o">$2</h1>
             <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
@@ -102,7 +102,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="w-[330px] p-2.5 lg:w-[400px] rounded-lg border-[1px] border-gray-500">
-            <h1 className="o text-3xl font-bold">SPA</h1>
+            <h1 className="o text-3xl font-bold">Σ | Sigma</h1>
             <br />
             <p className="lg:text-2xl text-lg text-gray-500">
               This is a $5 pack for large scale projects. Example - Messanger
@@ -112,7 +112,7 @@ export default function Home() {
             <hr />
             <br />
             <br />
-            <h1 className="text-2xl o">What do I get for $5?</h1>
+            <h1 className="text-2xl o">$5</h1>
             <br />
             <ul>
               <li className="text-gray-500 font-bold text-lg">HTML, CSS, JS</li>
