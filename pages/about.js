@@ -45,7 +45,7 @@ export default function Home() {
               </p>
               <br />
               <br />
-              <div className="p-2.5 w-[340px] lg:w-[540px] bg-black text-white text-2xl flex items-center justify-center -rotate-[5deg] lg:-rotate-[10deg]">
+              <div className="p-2.5 w-[340px] lg:w-[540px] bg-black text-white text-2xl hidden md:flex lg:flex items-center justify-center -rotate-[5deg] lg:-rotate-[10deg]">
                 <h1 className="a">
                   First, Solve the problem. <br className="lg:hidden block" />{" "}
                   Then, write the code
