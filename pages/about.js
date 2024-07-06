@@ -26,12 +26,12 @@ export default function Home() {
       </Head>
 
       <div id="main-content" className="">
-        <div className="lg:pt-[10%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
+        <div className="lg:pt-[5%] pt-[100px] lg:pl-0 pl-[10px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
           <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-6">
             <div className="flex flex-col space-y-2">
               <h1 className="text-3xl lg:text-5xl font-bold">I like,</h1>
               <h1
-                className="text-4xl lg:text-7xl font-thin pl-[30px] o"
+                className="text-4xl lg:text-7xl font-thin pl-[30px] font-[candara] o"
                 id="demo"
               >
                 A Straight way - DEVELOPMENT.
@@ -39,9 +39,8 @@ export default function Home() {
               <br />
               <p className="pl-[30px] text-[10px] lg:text-lg text-gray-500 font-semibold">
                 Welcome to my world, I am Agrim Singh. I am a frontend developer{" "}
-                <br />
-                hailing from India. Currently I work with Next.js and <br />
-                tailwindcss.
+                hailing from India. Currently I work with Next.js
+                <br /> and tailwindcss.
               </p>
               <br />
               <br />
@@ -67,16 +66,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div
-        id=""
-        className="relative bottom-0 left-0 right-0 w-[100vw]"
-      >
-        <br />
-        <hr />
-        <br />
-        <h1 className="l font-light text-center">Made with ❤️ using Next.js and Tailwind CSS | © 2022 Agrim Singh</h1>
-        <br />
-      </div>
+      <div id="" className="relative bottom-0 left-0 right-0 w-[100vw]"></div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function Home() {
       arrow.addEventListener("mousemove", ({ clientX, clientY }) => {
         const angle = Math.atan2(
           clientY - arrowCenter.y,
-          clientX - arrowCenter.x
+          clientX - arrowCenter.x,
         );
         arrow.style.transform = `rotate(${angle}rad)`;
       });
@@ -47,7 +47,7 @@ export default function Home() {
       <nav className="flex pl-3 pt-3"></nav>
       <div
         id="main-content"
-        className="flex lg:space-x-5 lg:pt-[15%] pt-[100px] lg:absolute lg:left-[50%] lg:translate-x-[-50%]"
+        className="flex lg:space-x-5 lg:pt-[5%] pt-[100px] absolute left-[50%] translate-x-[-50%]"
       >
         <div>
           <div className="flex lg:space-x-10 space-x-2 justify-center">
@@ -66,16 +66,17 @@ export default function Home() {
                 d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
               ></path>
             </svg>
-            <img src="https://img.icons8.com/external-solidglyph-m-oki-orlando/48/null/external-Calculus-artificial-intelligence-solidglyph-m-oki-orlando.png" />
-            <img src="https://img.icons8.com/ios-glyphs/48/null/trigonometry.png" />
           </div>
           <br />
           <h1 className="lg:text-7xl text-5xl l font-semibold text-center">
-            <Typewriter
-              onInit={(e) => {
-                e.typeString("The productivity tool, Typer+").start();
-              }}
-            />
+            Welcome to
+            <div className="text-blue-500 font-thin font-[candara]">
+              <Typewriter
+                onInit={(e) => {
+                  e.typeString("Agrim's Portfolio").start();
+                }}
+              />
+            </div>
           </h1>
           <br />
           <p className="text-center lg:text-lg text-[14px] text-gray-500 font-bold text-center">
@@ -85,16 +86,16 @@ export default function Home() {
           <br />
           <div className="flex space-x-2 justify-center">
             <button
-              onClick={() => router.push("/site")}
-              className="lg:w-[200px] transition ease-in-out hover:scale-110 w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center font-mono space-x-2"
+              onClick={() => router.push("/projects")}
+              className="lg:w-[200px] transition ease-in-out hover:scale-110 w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center space-x-2"
             >
-              <span className="lg:pt-1.5 text-center">Lets build a site</span>{" "}
+              <span className="text-center">Projects</span>{" "}
             </button>
             <button
               onClick={() => router.push("/about")}
-              className="lg:w-[200px] transition ease-in-out hover:scale-110 w-[160px] h-[40px] rounded-full font-bold border-black border-[1px] flex justify-center items-center font-mono space-x-2"
+              className="lg:w-[200px] transition ease-in-out hover:scale-110 w-[160px] h-[40px] rounded-full font-bold border-black border-[1px] flex justify-center items-center space-x-2"
             >
-              <span className="lg:pt-1.5">About Us</span>{" "}
+              <span className="">About Me</span>{" "}
             </button>
             <button
               onClick={() =>
@@ -197,7 +198,7 @@ export default function Home() {
             <br />
             <Image
               alt="Refurbish"
-              className="ml-[10px] w-[100px] h-[100px] lg:block hidden"
+              className="ml-[10px] w-[100px] h-[100px] block sm:hidden"
               src={mypic}
               width="600px"
               height="400px"

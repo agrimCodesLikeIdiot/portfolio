@@ -29,13 +29,6 @@ export default function Home() {
       >
         <div className="flex flex-col space-y-2">
           <h1 className="text-5xl font-bold o">Contact</h1>
-          <h1 className="pl-[160px] text-3xl">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString("Me...").start();
-              }}
-            />
-          </h1>
         </div>
         <br />
         <div className="flex flex-col space-y-3">
@@ -46,9 +39,32 @@ export default function Home() {
             </span>
           </div>
           <div className="flex space-x-2">
-            <img src="https://img.icons8.com/ios-glyphs/50/000000/discord-logo.png" />
+            <a href="https://www.instagram.com/agrim.s11/" target="_blank">
+              <img
+                src="https://img.icons8.com/material-rounded/50/instagram-new.png"
+                alt="instagram-new"
+                className="hover:scale-110"
+              />
+            </a>
             <span className="text-gray-500 font-semibold flex items-center">
-              derp108_🍁#2654
+              agrim.s11
+            </span>
+          </div>
+          <div className="flex space-x-2">
+            <a
+              href="https://www.snapchat.com/add/agrim108?share_id=clLzweRS2kI&locale=en-GB"
+              target="_blank"
+            >
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/50/snapchat--v1.png"
+                alt="snapchat--v1"
+                className="hover:scale-110"
+              />
+            </a>
+            <span className="text-gray-500 font-semibold flex items-center">
+              agrim108
             </span>
           </div>
         </div>

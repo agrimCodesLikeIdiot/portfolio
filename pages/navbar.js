@@ -34,7 +34,7 @@ export default function Home() {
             <Link href="/home">Home</Link>
             <Link href="/typer+">Typer+</Link>
             <Link href="/about">About</Link>
-            <Link href="/site">Get a site</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blogs">Blogs</Link>
             <Link href="/contact">Contact</Link>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="lg:hidden md:hidden flex text-left space-x-3 text-[14px] lg:items-center pt-[8px]">
             <Link href="/home">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/site">Pricing</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blogs">Blogs</Link>
             <Link href="/contact">Contact</Link>
           </div>
@@ -77,11 +77,11 @@ export default function Home() {
                   ) {
                     router.push("/blogs");
                   } else if (
-                    term === "get a site" ||
-                    term === "build me a site" ||
-                    term === "I want a site"
+                    term === "projects" ||
+                    term === "work" ||
+                    term === "my work"
                   ) {
-                    router.push("/site");
+                    router.push("/projects");
                   } else if (term === "contact" || term === "contact page") {
                     router.push("/contact");
                   } else {
