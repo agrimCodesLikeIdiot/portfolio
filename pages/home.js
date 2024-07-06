@@ -27,7 +27,7 @@ export default function Home() {
       arrow.addEventListener("mousemove", ({ clientX, clientY }) => {
         const angle = Math.atan2(
           clientY - arrowCenter.y,
-          clientX - arrowCenter.x,
+          clientX - arrowCenter.x
         );
         arrow.style.transform = `rotate(${angle}rad)`;
       });
@@ -116,12 +116,13 @@ export default function Home() {
         </div>
         <br />
         <div className="mt-[30px]">
-          <h1 className="text-3xl font-bold o text-center"></h1>
-          <br />
           <div className="flex justify-center space-x-5">
             <div className="p-2 bg-white border-2 border-black rounded-lg font-mono">
-              <div className="pb-2 border-b-2 border-b-black text-center">
-                ---- Player Stats ----
+              <div className="pb-2 border-b-2 border-b-black text-center flex flex-col">
+                <snap>---- Player Stats ----</snap>
+                <div className="flex space-x-2">
+
+                </div>
               </div>
               <div className="p-2">Expirience: 4 Years</div>
               <div className="p-2">
@@ -171,39 +172,23 @@ export default function Home() {
                 <span>Minimal</span>
               </li>
               <li className="mt-[30px]">
-                <Link href="">
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      router.push("/typer+");
-                    }}
-                    className="text-2xl font-semibold l"
-                  >
-                    <span>Learn More &gt;</span>
+                <a href="https://github.com/agrimCodesLikeIdiot/Typer-Plus" target="_blank">
+                  <button className="lg:w-[200px] transition ease-in-out hover:scale-110 w-[160px] h-[40px] bg-black rounded-full font-bold text-white flex justify-center items-center space-x-2">
+                    <span className="text-center">GitHub</span>{" "}
                   </button>
-                </Link>
+                </a>
               </li>
             </ul>
             <br />
             <Image
               alt="Refurbish"
-              className="ml-[10px] w-[100px] h-[100px] block sm:hidden"
+              className="ml-[10px] w-[50%] h-[50%] block"
               src={mypic}
               width="600px"
               height="400px"
-              id="hidden"
             />
           </div>
         </div>
-      </div>
-      <div id="" className="relative bottom-0 left-0 right-0 w-[100vw]">
-        <br />
-        <hr />
-        <br />
-        <h1 className="l font-light text-center">
-          Made with ❤️ using Next.js and Tailwind CSS | © 2022 Agrim Singh
-        </h1>
-        <br />
       </div>
     </div>
   );

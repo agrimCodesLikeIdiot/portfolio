@@ -2,6 +2,8 @@
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
+  background-color: white;
 }
 
 h1 {

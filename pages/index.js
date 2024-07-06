@@ -22,7 +22,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.tailwindcss.com/"></script>
       </Head>
-      <nav className="flex pl-3 pt-3"></nav>
       <div className="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]">
         <h1 className="text-2xl font-bold flex space-x-2 justify-center">
           @frontendagrim
