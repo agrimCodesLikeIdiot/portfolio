@@ -112,36 +112,25 @@ export default function Home() {
         <hr />
         <br />
         <div>
-          <h1 className="text-5xl font-bold o text-center">
-            Building Sites - By your prefrences
-          </h1>
+          <h1 className="text-5xl font-bold o text-center">Expertise</h1>
         </div>
         <br />
         <div className="mt-[30px]">
-          <h1 className="text-3xl font-bold o text-center">
-            What you will get?
-          </h1>
+          <h1 className="text-3xl font-bold o text-center"></h1>
           <br />
           <div className="flex justify-center space-x-5">
-            <ul className="flex flex-col">
-              <li className="flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Fast & Refurbishable sites</span>
-              </li>
-              <li className="flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Temparory Hosting</span>
-              </li>
-              <li className="flex space-x-2 items-center font-bold">
-                <span className="text-green-500 text-2xl">✔</span>
-                <span>Open Source</span>
-              </li>
-            </ul>
-            <img
-              alt="Refurbish"
-              className="w-[100px] h-[100px] object-cover"
-              src="https://img.icons8.com/external-filled-outline-geotatah/100/000000/external-refurbish-reverse-logistics-filled-outline-filled-outline-geotatah.png"
-            />
+            <div className="p-2 bg-white border-2 border-black rounded-lg font-mono">
+              <div className="pb-2 border-b-2 border-b-black text-center">
+                ---- Player Stats ----
+              </div>
+              <div className="p-2">Expirience: 4 Years</div>
+              <div className="p-2">
+                Abilities: Frontend Development | Game Development | Discord.py
+              </div>
+              <div className="p-2">
+                Skills: Next.js, Tailwind CSS, Discord.py, Roblox Studio
+              </div>
+            </div>
           </div>
         </div>
         <br />
